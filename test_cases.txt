@@ -1,0 +1,53 @@
+    ```
+    Functional Test Cases
+    -------------------------------
+
+    Test Case ID: TC-001
+    Description: Validate user can log in successfully given valid credentials
+    Steps:
+    1. Input valid email and password.
+    2. Click the login button.
+    Expected Result: User is successfully redirected to the dashboard.
+
+    Test Case ID: TC-002
+    Description: Validate error message shown for invalid login credentials
+    Steps:
+    1. Input invalid email or password.
+    2. Click the login button.
+    Expected Result: An error message is displayed saying input credentials are invalid.
+
+    Edge Cases
+    -------------------------------
+
+    Test Case ID: TC-003
+    Description: Validate system behavior when login with empty fields.
+    Steps:
+    1. Leave the email and password fields empty.
+    2. Click the login button.
+    Expected Result: An error message is displayed indicating that email and password cannot be blank.
+
+    Test Case ID: TC-004
+    Description: Validate system behavior when trying to input an unformatted email.
+    Steps:
+    1. Input an email without @ symbol.
+    2. Input a valid password.
+    2. Click the login button.
+    Expected Result: An error message is displayed showing the email format is incorrect.
+
+    Negative Test Cases
+    -------------------------------
+
+    Test Case ID: TC-005
+    Description: Validate whether the system is case sensitive for email and password
+    Steps:
+    1. Input email and password with a wrong case.
+    2. Click the login button.
+    Expected Result: An error message is displayed saying input credentials are invalid.
+
+    Test Case ID: TC-006
+    Description: Validate system behaviour when login is attempted with blocked or deactivated user account.
+    Steps:
+    1. Input email and password of a blocked or deactivated user.
+    2. Click the login button
+    Expected Result: An error message is displayed indicating the user account is deactivated or blocked.
+    ```
